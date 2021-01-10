@@ -4009,11 +4009,13 @@ GO
 ALTER TABLE [dbo].[CommercialInvoice] ADD  CONSTRAINT [DF_CommercialInvoice_Delivered]  DEFAULT ((0)) FOR [Delivered]
 GO
 ALTER TABLE [dbo].[CommercialInvoice] ADD  CONSTRAINT [DF_CommercialInvoice_SentViaEmail]  DEFAULT ((0)) FOR [SentViaEmail]
+GOALTER TABLE [dbo].[Upc] ADD  CONSTRAINT [DF_Upc_IsBackOrdered]  DEFAULT ((0)) FOR [IsBackOrdered]
 GO
 ALTER TABLE [dbo].[CommercialInvoice] ADD  CONSTRAINT [DF_CommercialInvoice_SentViaFTP]  DEFAULT ((0)) FOR [SentViaFTP]
 GO
 ALTER TABLE [dbo].[DeliveredLineItemHistory] ADD  CONSTRAINT [DF_DeliveredLineItemHistory_IsResend]  DEFAULT ((0)) FOR [IsResend]
 GO
+
 ALTER TABLE [dbo].[DeliveredLineItemHistory] ADD  CONSTRAINT [DF_DeliveredLineItemHistory_IsReroute]  DEFAULT ((0)) FOR [IsReroute]
 GO
 ALTER TABLE [dbo].[DeliveredLineItemHistory] ADD  CONSTRAINT [DF_DeliveredLineItemHistory_IsSuccessful]  DEFAULT ((1)) FOR [IsSuccessful]
