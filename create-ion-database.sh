@@ -1,6 +1,6 @@
 #!/bin/bash
 source ~/.bashrc
-endpoint=184.105.48.47
+endpoint=184.105.48.49
 user_name=SA
 password=Nikhar@123
 #endpoint=$(aws secretsmanager get-secret-value --secret-id=ion_rds_dev_secrets --region=us-east-1 | jq -r .SecretString | jq -r .rdsEndpoint)
