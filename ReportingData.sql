@@ -1,0 +1,62 @@
+USE [${Environment}Reporting]
+GO
+SET IDENTITY_INSERT [dbo].[Brand] ON 
+
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (1, N'BAL', N'Trees', N'BAL')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (2, N'TREE', N'Trees', N'TREE')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (3, N'CTM', N'Trees', N'CTM')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (4, N'TC', N'Trees', N'TC')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (5, N'GVCT', N'Trees', N'GVCT')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (6, N'BHUK', N'International', N'BHUK')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (7, N'BHFR', N'International', N'BHFR')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (8, N'BHDE', N'International', N'BHDE')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (9, N'TTUK', N'International', N'TTUK')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (10, N'BHAU', N'International', N'BHAU')
+INSERT [dbo].[Brand] ([ID], [Code], [Context], [BrandCodeForWHM]) VALUES (11, N'BP', N'Trees', N'BP')
+SET IDENTITY_INSERT [dbo].[Brand] OFF
+SET IDENTITY_INSERT [dbo].[Platform] ON 
+
+INSERT [dbo].[Platform] ([ID], [Name]) VALUES (1, N'Volusion')
+INSERT [dbo].[Platform] ([ID], [Name]) VALUES (2, N'Pseudo')
+INSERT [dbo].[Platform] ([ID], [Name]) VALUES (3, N'Hybris')
+INSERT [dbo].[Platform] ([ID], [Name]) VALUES (5, N'SalesForce')
+INSERT [dbo].[Platform] ([ID], [Name]) VALUES (6, N'Amazon')
+SET IDENTITY_INSERT [dbo].[Platform] OFF
+SET IDENTITY_INSERT [dbo].[Source] ON 
+
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (1, 1, N'Balsam Hill Volusion', 1)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (2, 1, N'Treetopia Volusion', 2)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (3, 1, N'Tree Classics Volusion', 4)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (4, 1, N'Christmas Tree Market Volusion', 3)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (5, 1, N'Green Valley Christmas Trees Volusion', 5)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (6, 1, N'Balsam Hill UK Volusion', 6)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (7, 1, N'Balsam Hill FR Volusion', 7)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (8, 1, N'Balsam Hill DE Volusion', 8)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (9, 1, N'Balsam Hill AU Volusion', 10)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (10, 1, N'Treetopia UK Volusion', 9)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (11, 6, N'Balsam Hill Amazon', 1)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (12, 6, N'Treetopia Amazon', 2)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (13, 6, N'Tree Classics Amazon', 4)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (14, 6, N'Christmas Tree Market Amazon', 3)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (16, 5, N'Treetopia Salesforce', 2)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (17, 5, N'Tree Classics Salesforce', 4)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (18, 5, N'Christmas Tree Market Salesforce', 3)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (19, 5, N'Green Valley Christmas Trees Salesforce', 5)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (21, 5, N'Balsam Hill FR Salesforce', 7)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (22, 5, N'Balsam Hill DE Salesforce', 8)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (24, 5, N'Treetopia UK Salesforce', 9)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (25, 3, N'Balsam Hill Hybris', 1)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (26, 3, N'Balsam Hill UK Hybris', 6)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (27, 5, N'Balsam Hill Salesforce', 1)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (28, 5, N'Balsam Hill UK Salesforce', 6)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (31, 3, N'Balsam Hill AU Hybris', 10)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (33, 5, N'Balsam Hill AU Hybris(Salesforce)', 10)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (34, 6, N'Balsam Hill UK Amazon', 6)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (35, 6, N'Balsam Hill FR Amazon', 7)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (36, 6, N'Balsam Hill DE Amazon', 8)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (37, 3, N'Balsam Hill FR Hybris', 7)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (38, 3, N'Balsam Hill DE Hybris', 8)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (39, 3, N'Balsam Provisions Hybris', 11)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (40, 6, N'Balsam Provisions Amazon', 11)
+INSERT [dbo].[Source] ([ID], [PlatformID], [Name], [BrandID]) VALUES (41, 9, N'Tree Classics Wayfair', 4)
+SET IDENTITY_INSERT [dbo].[Source] OFF
