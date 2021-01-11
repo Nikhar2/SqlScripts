@@ -4100,6 +4100,8 @@ ALTER TABLE [dbo].[Upc] ADD  CONSTRAINT [DF_Upc_IsLTL]  DEFAULT ((0)) FOR [IsLTL
 GO
 ALTER TABLE [dbo].[Upc] ADD  CONSTRAINT [DF_Upc_IsTree]  DEFAULT ((0)) FOR [IsTree]
 GO
+ALTER TABLE [dbo].[Upc] ADD  CONSTRAINT [DF_Upc_IsBackOrdered]  DEFAULT ((0)) FOR [IsBackOrdered]
+GO
 ALTER TABLE [dbo].[Upc] ADD  CONSTRAINT [DF_Upc_CommodityClass]  DEFAULT ((175)) FOR [CommodityClass]
 GO
 ALTER TABLE [dbo].[UpcForLineItemAllocatedToWarehouseID_1] ADD  CONSTRAINT [DF_UpcForLineItemAllocatedToWarehouseID_1_OrderID]  DEFAULT ((0)) FOR [OrderID]
